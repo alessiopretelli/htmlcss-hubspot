@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  padding-top: 50px;
+}
+header {
+  height: 50px;
+  width: 100%;
+  padding: 0 15%;
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightgray;
+  padding: 0 15%;
+  font-size: 15px;
+  z-index: 1;
+}
+.banner_first_box {
+  float: left;
+  height: 100%;
+}
+.banner_second_box {
+  float: right;
+  height: 100%;
+  padding: 10px 0;
+}
+.text {
+  color: darkblue;
+  height: 100%;
+  line-height: 50px;
+  display: inline-block;
+}
+.text.h {
+  margin-left: 20px;
+}
+.text a {
+  text-decoration: none;
+}
+.text.world::before {
+  content: "";
+}
+.text.apex::after {
+  content: "";
+}
+.vertical_line {
+  display: inline-block;
+  height: 15px;
+  border: 0.5px solid grey;
+  vertical-align: middle;
+  margin: 0 20px;
+}
+.button_login {
+  display: inline-block;
+  border: 1px solid orange;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+  width: 70px;
+  line-height: 30px;
+  color: orange;
+  background-color: white;
+  margin: 0 20px;
+}
+.button_login::before {
+  content: "";
+}
+.main_button {
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+  width: 150px;
+  line-height: 30px;
+  color: white;
+  border: 1px orange solid;
+  background-color: orange;
+}
+
+.logo {
+  float: left;
+  height: 100%;
+  padding: 10px 0;
+}
+.header_box {
+  float: right;
+  height: 100%;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 745px;
+  background-image: url(../img/jumbotron.png);
+  background-size: contain;
+  background-position: center;
+  padding: 10% 15%;
+}
+.text_jumbotron {
+  width: 40%;
+}
+.text_jumbotron h1 {
+  font-size: 2.5em;
+  color: darkblue;
+}
+.text_jumbotron p {
+  margin: 20px 0;
+}
+.main_button.j {
+  height: 50px;
+  line-height: 50px;
+}
+
+.top_center::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top_center {
+  padding: 2.5% 15% 0 15%;
+  background-color: beige;
+}
+.cube {
+  width: 100%;
+  padding: 0 20%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#cube {
+  height: 150px;
+  width: 150px;
+}
+.cube h1 {
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+.top_box_tc {
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 1px grey;
+  border-radius: 5px;
+}
+.box_tc {
+  float: left;
+  height: 500px;
+  width: 27%;
+  margin: 5% 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px grey;
+}
+.box_tc.middle {
+  margin: 5% 9.5%;
+}
