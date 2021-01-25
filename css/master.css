@@ -19,9 +19,10 @@ header {
   top: 0;
   width: 100%;
   height: 50px;
-  background-color: lightgray;
+  background-color: beige;
   padding: 0 15%;
   font-size: 15px;
+  border-bottom: 2px solid brown;
   z-index: 1;
 }
 .banner_first_box {
@@ -46,7 +47,8 @@ header {
   text-decoration: none;
 }
 .text.world::before {
-  content: "";
+  font-family: 'Font Awesome 5 Free'
+  content: '\f7a2';
 }
 .text.apex::after {
   content: "";
@@ -126,13 +128,12 @@ header {
 }
 .top_center {
   padding: 2.5% 15% 0 15%;
-  background-color: beige;
 }
 .cube {
   width: 100%;
   padding: 0 20%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #cube {
   height: 150px;
@@ -146,19 +147,173 @@ header {
 .top_box_tc {
   height: 250px;
   width: 100%;
-  background-color: white;
+  background-color: beige;
   box-shadow: 2px 2px 1px grey;
   border-radius: 5px;
+}
+.t_b_tc_stuff {
+  float: left;
+  position: relative;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.t_b_tc_stuff img{
+  position: absolute;
+  top: 20%;
+  height: 75px;
+  width: 100px;
+}
+.t_b_tc_text {
+  float: left;
+  width: 70%;
+  height: 100%;
+  padding: 5%;
+}
+.t_b_tc_text h4, .t_b_tc_text h3, .t_b_tc_text p {
+  margin-bottom: 10px;
+  color: darkblue;
+}
+.t_b_tc_text h4, .box_tc_text_bottom h4 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.hor_line {
+  width: 400px;
+  height: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  line-height: 20px;
+}
+.tc_list {
+  display: inline-block;
+  margin: 0 15px 0 0px;
+  color: darkblue;
+}
+.tc_list.z {
+  margin: 0;
+  display: block;
+}
+.tc_list::before {
+  content: '';
+}
+.main_button.k {
+  position: absolute;
+  bottom: 20%;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12.5px;
 }
 .box_tc {
   float: left;
+  position: relative;
   height: 500px;
   width: 27%;
   margin: 5% 0;
-  background-color: white;
+  background-color: beige;
   border-radius: 5px;
   box-shadow: 2px 2px 1px grey;
+  color: darkblue;
+  text-align: center;
 }
 .box_tc.middle {
   margin: 5% 9.5%;
+}
+.box_tc img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 75px;
+  width: 100px;
+}
+.box_tc_text {
+  position: absolute;
+  bottom: 45%;
+  height: 30%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+  text-align: center;
+}
+.box_tc_text h3 {
+  margin-bottom: 10px;
+}
+.box_tc_text_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 40%;
+  width: 80%;
+  transform: translate(-50%,-5%);
+}
+.box_tc_text_bottom hr {
+  margin-bottom: 20px;
+}
+.main_button.l {
+  margin-top: 25px;
+  height: 30px;
+  width: 90px;
+  font-size: 10px;
+}
+
+
+.learn_grow {
+  margin: 0 auto;
+  color: white;
+  padding: 2.5% 15%;
+  width: 100%;
+  background-color: turquoise;
+  background: linear-gradient(purple, purple, blue, lightblue);
+  text-align: center;
+}
+.learn_grow h2 {
+  margin-bottom: 20px;
+}
+.learn_grow p {
+  margin-bottom: 20px;
+}
+.learn_grow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.learn_grow_box {
+  float: left;
+  height: 200px;
+  width: 25%;
+  padding: 20px 0;
+}
+.learn_grow_box img {
+  height: 70px;
+  width: 70px;
+}
+.learn_grow_box h1 {
+  margin: 20px 0;
+}
+.learn_grow_box.bb {
+  border-bottom: 2px solid white;
+}
+.learn_grow_box.br {
+  border-right: 2px solid white;
+}
+.learn_grow_box.png {
+  position: relative;
+}
+.learn_grow_box_png {
+  position: absolute;
+  background-image: url(../img/b5);
+  background-size: cover;
+  top: 25px;
+  left: 50%;
+  height: 40px;
+  width: 150px;
+  transform: translate(-50%,-5%);
+}
+.learn_grow_box_png_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-5%);
 }
